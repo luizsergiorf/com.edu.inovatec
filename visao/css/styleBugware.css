@@ -145,6 +145,10 @@ button:hover {
     transform: translateX(10px);
 }
 
-.ul_footer{
+.ul_footer {
     padding-top: 60px;
+}
+
+footer .img-responsive {
+    width: 75%;
 }
