@@ -144,3 +144,7 @@ button:hover {
     -o-transform: translateX(10px);
     transform: translateX(10px);
 }
+
+.ul_footer{
+    padding-top: 60px;
+}
