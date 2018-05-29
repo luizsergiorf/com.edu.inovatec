@@ -44,7 +44,7 @@ ul.topnav li.right {
     color: crimson;
 }
 
-.img-responsive {
+.img-responsive, .logo {
     display: block;
     max-width: 100%;
     height: auto;
@@ -151,4 +151,10 @@ button:hover {
 
 footer .img-responsive {
     width: 75%;
+}
+
+.logo {
+    width: 55%;
+    float: left;
+    padding: 7px 0px 10px 0px;
 }
