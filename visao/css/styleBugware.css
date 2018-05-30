@@ -165,7 +165,6 @@ footer .img-responsive {
 Slideshow*/
 
 .w3-content {
-    max-width: 980px;
     margin: auto;
 }
 
@@ -185,13 +184,6 @@ Slideshow*/
     display: inline-block;
     width: auto;
     text-align: center !important;
-}
-
-.w3-container:after,
-.w3-container:before {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 .w3-container {
@@ -257,7 +249,7 @@ Slideshow*/
 }
 .imgSlide{
     max-width:980px;
-    max-height:400px;
+    max-height:500px;
     width: 100%;
     height: auto;
 }
