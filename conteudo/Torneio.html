@@ -109,6 +109,99 @@
                             <!-- CONTEUDO DA PAGINA EDITYAR SOMENTE EM BAIXO -->
                             <span class="hide">Início do conteúdo da página</span>
                             <!--        CONTEUDO     -->
+                            <div class="row-fluid">
+                                <div class="span11">
+                                    <span class="documentCategory">Torneio</span>
+                                    <h2 class="secondaryHeading"> Torneio Seguidor de Linha </h2>
+                                    <div class="subtitle">
+                                        <p>Dias 12 e 13 de junho</p>
+                                    </div>
+                                    <div class="content-header-options-1 row-fluid">
+                                        <div class="documentByLine span8">
+                                            <ul>
+                                                <li class="documentPublished">
+                                                    <strong>Público alvo</strong> alunos do IFTM campus UPT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="w3-content w3-display-container">
+                                        <img class="mySlides imgSlide" src="../visao/img/img1_torneio.png" style="width:100%">
+                                        <img class="mySlides imgSlide" src="../visao/img/img2_torneio.png" style="width:100%">
+                                        <img class="mySlides imgSlide" src="../visao/img/img3_torneio.png" style="width:100%">
+                                        <video class="mySlides imgSlide" controls>
+                                            <source src="../visao/img/torneio_video.mp4" type="video/mp4" media="all and (max-width:500px)">
+                                        </video>
+                                        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                                            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                                            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                                            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                                            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                                            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                                            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        var slideIndex = 1;
+                                        showDivs(slideIndex);
+
+                                        function plusDivs(n) {
+                                            showDivs(slideIndex += n);
+                                        }
+
+                                        function currentDiv(n) {
+                                            showDivs(slideIndex = n);
+                                        }
+
+                                        function showDivs(n) {
+                                            var i;
+                                            var x = document.getElementsByClassName("mySlides");
+                                            var dots = document.getElementsByClassName("demo");
+                                            if (n > x.length) {
+                                                slideIndex = 1
+                                            }
+                                            if (n < 1) {
+                                                slideIndex = x.length
+                                            }
+                                            for (i = 0; i < x.length; i++) {
+                                                x[i].style.display = "none";
+                                            }
+                                            for (i = 0; i < dots.length; i++) {
+                                                dots[i].className = dots[i].className.replace(" w3-white", "");
+                                            }
+                                            x[slideIndex - 1].style.display = "block";
+                                            dots[slideIndex - 1].className += " w3-white";
+                                        }
+                                    </script>
+                                    <br>
+                                    <br>
+                                    <p>O Instituto Federal de Educa&ccedil;&atilde;o, Ci&ecirc;ncia e Tecnologia do Tri&acirc;ngulo
+                                        Mineiro (IFTM) realiza torneio seguidor de linha no Campos Avançado Uberaba Parque
+                                        Tecnológico
+                                    </p>
+
+                                    <p>O público alvo são os alunos do IFTM campus Uberaba Parque Tecnológico</p>
+
+                                    <p> Dia 12 de junho de 2018, das 13:00 às 15:00, será o período destinado para o treinamento
+                                        dos carrinhos na pista.
+                                    </p>
+
+                                    <p> Dia 13 de junho de 2018, das 9:30 às 12:00, será a realização do torneio seguidor de
+                                        linha.
+                                    </p>
+
+                                    <p>Em breve, tamb&eacute;m ser&atilde;o abertas inscri&ccedil;&otilde;es.</p>
+                                    <br/>
+                                    <div class="container-contact100-form-btn">
+                                        <button type="submit" class="contact100-form-btn" id="enviar">
+                                            <span>
+                                                Inscrever-se agora
+                                                <i class="zmdi zmdi-arrow-right m-l-8"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
                             <!--        CONTEUDO  FINAL  -->
                             <span class="hide">Fim do conteúdo da página</span>
                         </section>
