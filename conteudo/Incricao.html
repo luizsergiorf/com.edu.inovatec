@@ -28,7 +28,7 @@
 
     <!-- CSS da Bugware-->
     <link rel="stylesheet" type="text/css" href="../visao/css/styleBugware.css">
-
+    <link rel="stylesheet" type="text/css" href="../visao/css/css/fontawesome-all.css">
 
 </head>
 
@@ -58,29 +58,28 @@
             <!-- fim div.container -->
             <div class="menu">
                 <div class="container">
-                    <ul class="topnav">
-                        <li>
-                            <a href="../index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="Workshops.html">Workshop</a>
-                        </li>
-                        <li>
-                            <a href="Minicursos.html">Cursos e Minicursos</a>
-                        </li>
-                        <li>
-                            <a href="Torneio.html">Torneio Seguidor de Linha</a>
-                        </li>
-                        <li>
-                            <a href="">HACKATHON</a>
-                        </li>
-                        <li class="right">
-                            <a class="active" href="Incricao.html">Inscrições</a>
-                        </li>
-                        <li class="right">
-                            <a href="Cronograma.html">Cronograma</a>
-                        </li>
-                    </ul>
+                    <div class="topnav" id="myTopnav">
+                        <a href="../index.html">Home</a>
+                        <a href="Workshops.html">Workshop</a>
+                        <a href="Minicursos.html">Cursos e Minicursos</a>
+                        <a href="Torneio.html">Torneio Seguidor de Linha</a>
+                        <a href="">HACKATHON</a>
+                        <a class="active right" href="Incricao.html">Inscrições</a>
+                        <a class="right" href="Cronograma.html">Cronograma</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {
+                                x.className += " responsive";
+                            } else {
+                                x.className = "topnav";
+                            }
+                        }
+                    </script>
                 </div>
             </div>
         </header>
@@ -94,29 +93,39 @@
                             <!--        CONTEUDO     -->
                             <div class="row-fluid">
                                 <div class="span12">
-                                        <h2 class="secondaryHeading">Inscrições</h2>
-                                        <div class="subtitle">
-                                            <p>Inscrições seguem abertas até 10 de junho</p>
-                                        </div>
-                                        <br>
-                                        <br>
+                                    <h2 class="secondaryHeading">Inscrições</h2>
+                                    <div class="subtitle">
+                                        <p>Inscrições seguem abertas até 10 de junho</p>
+                                    </div>
+                                    <br>
+                                    <br>
                                     <div class="span5">
                                         <ul class="ul_class">
                                             <li>
                                                 <a href="Minicursos.html#git">Git e GitHub para iniciantes</a>
-                                                <br> <b class="vagas">Vagas: 25</b></li>
+                                                <br>
+                                                <b class="vagas">Vagas: 25</b>
+                                            </li>
                                             <li>
                                                 <a href="Minicursos.html#ux">UX & Design Thinking: Experiência do Usuário nos negócios</a>
-                                                <br> <b class="vagas">Vagas: 20</b></li>
+                                                <br>
+                                                <b class="vagas">Vagas: 20</b>
+                                            </li>
                                             <li>
                                                 <a href="Minicursos.html#req">Receita para levantar Requisitos de Software</a>
-                                                <br> <b class="vagas">Vagas: 30</b></li>
+                                                <br>
+                                                <b class="vagas">Vagas: 30</b>
+                                            </li>
                                             <li>
                                                 <a href="Minicursos.html#ps">Photoshop Básico</a>
-                                                <br> <b class="vagas">Vagas: 30</b></li>
+                                                <br>
+                                                <b class="vagas">Vagas: 30</b>
+                                            </li>
                                             <li>
                                                 <a href="Minicursos.html#plug">Pug - ferramenta de União de frameworks</a>
-                                                <br> <b class="vagas">Vagas: 100</b></li>
+                                                <br>
+                                                <b class="vagas">Vagas: 100</b>
+                                            </li>
                                         </ul>
 
                                     </div>

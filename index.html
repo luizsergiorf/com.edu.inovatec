@@ -34,7 +34,7 @@
 
     <!-- CSS da Bugware-->
     <link rel="stylesheet" type="text/css" href="visao/css/styleBugware.css">
-
+    <link rel="stylesheet" type="text/css" href="visao/css/css/fontawesome-all.css">
 
 
 </head>
@@ -64,29 +64,28 @@
             <!-- fim div.container -->
             <div class="menu">
                 <div class="container">
-                    <ul class="topnav">
-                        <li>
-                            <a class="active" href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="conteudo/Workshops.html">Workshop</a>
-                        </li>
-                        <li>
-                            <a href="conteudo/Minicursos.html">Cursos e Minicursos</a>
-                        </li>
-                        <li>
-                            <a href="conteudo/Torneio.html">Torneio Seguidor de Linha</a>
-                        </li>
-                        <li>
-                            <a href="">HACKATHON</a>
-                        </li>
-                        <li class="right">
-                            <a href="conteudo/Incricao.html">Inscrições</a>
-                        </li>
-                        <li class="right">
-                            <a href="conteudo/Cronograma.html">Cronograma</a>
-                        </li>
-                    </ul>
+                    <div class="topnav" id="myTopnav">
+                        <a class="active" href="index.html">Home</a>
+                        <a href="conteudo/Workshops.html">Workshop</a>
+                        <a href="conteudo/Minicursos.html">Cursos e Minicursos</a>
+                        <a href="conteudo/Torneio.html">Torneio Seguidor de Linha</a>
+                        <a href="">HACKATHON</a>
+                        <a class="right" href="conteudo/Incricao.html">Inscrições</a>
+                        <a class="right" href="conteudo/Cronograma.html">Cronograma</a>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </div>
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {
+                                x.className += " responsive";
+                            } else {
+                                x.className = "topnav";
+                            }
+                        }
+                    </script>
                 </div>
             </div>
         </header>
@@ -233,9 +232,9 @@
             <!-- fim .container -->
             <div class="footer-ferramenta">
                 <div class="container">
-                        <p>Desenvolvido pelo IFTM com parceira da
-                            <a href="http://www.bugware.com.br/" target="_blank">Bugware</a>
-                        </p>
+                    <p>Desenvolvido pelo IFTM com parceira da
+                        <a href="http://www.bugware.com.br/" target="_blank">Bugware</a>
+                    </p>
                 </div>
             </div>
         </footer>
