@@ -35,7 +35,7 @@
 
 @media screen and (max-width: 766px) {
     .topnav a{
-        padding: 18px 18px;
+        padding: 16px 18px;
     }
     .topnav a:not(.active) {
         display: none;
@@ -43,6 +43,7 @@
     .topnav a.icon {
         float: right;
         display: block;
+        font-size: 18px;
     }
     .topnav a.right {
         float: left;
