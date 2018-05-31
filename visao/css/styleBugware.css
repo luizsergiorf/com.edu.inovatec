@@ -35,7 +35,7 @@
 
 @media screen and (max-width: 766px) {
     .topnav a{
-        padding: 18px 18px !important;
+        padding: 18px 18px;
     }
     .topnav a:not(.active) {
         display: none;
