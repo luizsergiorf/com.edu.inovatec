@@ -34,6 +34,9 @@
 }
 
 @media screen and (max-width: 766px) {
+    .topnav a{
+        padding: 18px 18px !important;
+    }
     .topnav a:not(.active) {
         display: none;
     }
@@ -47,9 +50,6 @@
 }
 
 @media screen and (max-width: 766px) {
-    .topnav a {
-        padding: 18px 18px;
-    }
     .topnav.responsive {
         position: relative;
     }
