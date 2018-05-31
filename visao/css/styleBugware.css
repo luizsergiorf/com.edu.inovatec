@@ -59,7 +59,7 @@ ul.topnav li.right {
 
 .ul_class {
     list-style-type: disc;
-    padding-left: 35px;
+    padding-left: 20px;
 }
 
 /*------------------------------------------------------------------
@@ -285,4 +285,12 @@ video {
     width: 100%;
     max-width: 1000px;
     height: auto;
+}
+a{
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #003c65;
 }
