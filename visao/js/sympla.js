@@ -1,8 +1,8 @@
-t = [11, 11, 11];
-root = document.getElementById("sympla-widget-295507");
+t = [28, 41, 40, 17, 41];
+root = document.getElementById("sympla-widget-299765");
 cw = root.clientWidth - 95;
 h = 205;
-for (i = 0; i < 3; i++) {
+for (i = 0; i < 5; i++) {
     l = Math.floor(t[i] / (cw / 9)) + 1;
     h += 49;
     if (cw <= 154) h += 20;
@@ -11,7 +11,7 @@ for (i = 0; i < 3; i++) {
 console.log(h);
 root.setAttribute("style", "max-width: 700px;");
 ifrm = document.createElement("IFRAME");
-ifrm.setAttribute("src", "https://www.sympla.com.br/tickets-grid-widget?eid=295507&lang=pt");
+ifrm.setAttribute("src", "https://www.sympla.com.br/tickets-grid-widget?eid=299765&lang=pt");
 ifrm.setAttribute("id", "symplaw");
 ifrm.setAttribute("frameborder", "0");
 ifrm.setAttribute("vspace", "0");
@@ -31,4 +31,3 @@ while (root.firstChild) {
     root.removeChild(root.firstChild);
 }
 root.appendChild(ifrm);
-
